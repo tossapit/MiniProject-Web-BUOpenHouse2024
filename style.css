@@ -1,1 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.schedule-header {
+    background-color: #9B1B8E;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.schedule-header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.schedule-header p {
+    font-size: 1.2rem;
+}
+
+.schedule-table {
+    margin-bottom: 2rem;
+    margin-top: 20px;
+}
+
+.table {
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table thead {
+    background-color: #9B1B8E;
+    color: white;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f3e6f2;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #9B1B8E;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer p {
+    margin: 0;
+}
