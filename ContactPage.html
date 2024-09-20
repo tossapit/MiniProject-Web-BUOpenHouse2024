@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Open House BU 2024</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BU Open House 2024</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedulepage.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="speakerprofilespage.html">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="workshops.html">Workshops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="GalleryPage.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQPage.html">FAQ</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header class="schedule-header">
+        <h1>Contact Us - Open House BU 2024</h1>
+    </header>  
+    <div class="container">
+        
+        
+        <form action="#" method="post">
+            <label for="name">ชื่อ-นามสกุล:</label>
+            <input type="text" id="name" name="name" placeholder="กรอกชื่อ-นามสกุลของคุณ" required>
+
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" placeholder="กรอกอีเมลของคุณ" required>
+
+            <label for="message">ข้อความ:</label>
+            <textarea id="message" name="message" rows="5" placeholder="กรอกข้อความที่ต้องการสอบถาม..." required></textarea>
+
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+
+        <div class="contact-info">
+            <p>หากมีคำถามเพิ่มเติม สามารถติดต่อเราได้ที่:</p>
+            <p>โทรศัพท์: 02-407-3888</p>
+            <p>อีเมล: info@bu.ac.th</p>
+            <p>ที่อยู่: มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; BU OPEN HOUSE 2024 By Bangkok University</p>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+      
+          
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+      
+          
+          fetch('https://script.google.com/macros/s/AKfycbwanxKtRnrXD1Bi1iQ48CCJfhIbVWLZjd-Ws594Pde4FMjkl4lSnghQytp1QtCfHRbc/exec', { // เปลี่ยนเป็น URL ของ Web App
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams({
+              'name': name,
+              'email': email,
+              'message': message
+            })
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.status === 'success') {
+              alert('ข้อความของคุณถูกส่งเรียบร้อยแล้ว! ขอบคุณที่ติดต่อเรา');
+              document.getElementById('contactForm').reset();
+            } else {
+              alert('เกิดข้อผิดพลาดในการส่งข้อความ กรุณาลองใหม่อีกครั้ง');
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            alert('เกิดข้อผิดพลาดในการเชื่อมต่อกับเซิร์ฟเวอร์ กรุณาลองใหม่อีกครั้ง');
+          });
+        });
+      </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
