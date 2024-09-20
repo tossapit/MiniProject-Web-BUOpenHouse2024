@@ -6,67 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Open House - BU OPEN HOUSE 2024</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <style>
+        /* Styling adjustments to match the theme */
+        body {
+            background-color: #212529;
+            color: #fff;
+        }
+
+        .header {
+            background-color: #982B1C;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .card {
+            background-color: #333;
+            color: #fff;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            background-color: #9B1B8E;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .map-container iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div id="map" bg-bg-blue="" py-20="" text-white="" data-v-cc570168="">
-        <div grid="~ cols-1 md:cols-2" mx-auto="" gap-10="" container="" data-v-cc570168="">
-            <div data-v-cc570168="">
-                <div relative="" mb-8="" text-16="" font-bold="" line-height-none="" data-v-cc570168="">
-                    <div inline-block="" absolute="" right="0 md:-15" top--25="" w="30%" data-v-cc570168=""
-                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><!--[--><img
-                            h-full="" w-full="" object-contain="" object-rb="" src="/_nuxt/mascot_business.CLXPf025.svg"
-                            alt="" data-v-cc570168=""><!--]--></div>
-                </div>
-                <div text-lg="" line-height-normal="" data-v-cc570168="">
-                    <div mb-2="" font-bold="" data-v-cc570168="">การเดินทาง</div>
-                    <div mb-1="" data-v-cc570168=""><span font-bold="" data-v-cc570168="">รถเมล์ : </span><span
-                            font-light="" data-v-cc570168="">สาย 39 ปอ.510 / ปอ.520</span></div>
-                    <div mb-1="" data-v-cc570168=""><span font-bold="" data-v-cc570168="">รถตู้ สาย ต.85-93
-                            (ฝั่งเกาะพญาไท)
-                            : </span>
-                        <ul data-v-cc570168="">
-                            <li data-v-cc570168="">อนุสาวรีย์ชัยสมรภูมิ-มธ. (ศูนย์รังสิต) - ใกล้ BTS
-                                อนุสาวรีย์ชัยสมรภูมิ
-                            </li>
-                            <li data-v-cc570168="">สาย ต.118-1 หมอชิต-มธ. (ศูนย์รังสิต)</li>
-                            <li data-v-cc570168="">สาย 1008 (อยู่ตรงข้างฟิวเจอร์พาร์ค รังสิต)</li>
-                            <li data-v-cc570168="">ช่วงรังสิต-มธ. (ศูนย์รังสิต)</li>
-                        </ul>
-                    </div>
-                    <div mb-1="" data-v-cc570168=""><span font-bold="" data-v-cc570168="">รถไฟฟ้าสายสีเขียว (BTS) :
-                        </span>
-                        <ul data-v-cc570168="">
-                            <li data-v-cc570168="">ลงสถานีหมอชิต (ทางออก 3,4) ต่อรถตู้สาย ต. 118-1</li>
-                            <li data-v-cc570168="">ลงสถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3,4) ต่อรถตู้สาย ต.85-93
-                                (ฝั่งเกาะพญาไท)</li>
-                            <li data-v-cc570168="">ลงสถานีแยกคปอ. (ทางออก 1,3) ต่อรถเมล์ สาย 39,520</li>
-                        </ul>
-                    </div>
-                    <div mb-1="" data-v-cc570168=""><span font-bold="" data-v-cc570168="">รถไฟฟ้าสายสีน้ำเงิน (MRT) :
-                        </span>
-                        <ul data-v-cc570168="">
-                            <li data-v-cc570168="">ลงสถานีจตุจักร (ทางออก 3,4) ต่อรถตู้สาย ต.118-1 หมอชิต-มธ.
-                                (ศูนย์รังสิต)
-                            </li>
-                        </ul>
-                    </div>
-                    <div data-v-cc570168=""><span font-bold="" data-v-cc570168="">รถไฟฟ้าสายสีแดง (SRT) : </span>
-                        <ul data-v-cc570168="">
-                            <li data-v-cc570168="">ลงสถานี รังสิต ทางออกที่ 3 ต่อรถสองแถวสาย รังสิต-จารุศร</li>
-                        </ul>
-                    </div>
-                </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>About BU Open House 2024</h1>
+        <p>Explore the future of technology at BU's School of Information Technology and Innovation Open House 2024</p>
+    </header>
+
+    <div class="container">
+        <!-- Card Section for Travel Information -->
+        <div class="card">
+            <div class="card-header">
+                <h2>การเดินทาง</h2>
             </div>
-            <div relative="" data-v-cc570168=""><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.635489989523!2d100.60990561526141!3d14.0396079943404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e280728e16f629%3A0xdadc26839284214d!2sBangkok+University+Rangsit+Campus!5e0!3m2!1sen!2sth!4v1522737188013"
-                    width="100%" height="100%" frameborder="0" style="border: 0;" allowfullscreen="" loading="lazy"
-                    data-v-cc570168=""></iframe></div>
+            <div class="card-body">
+                <p>การเดินทางมายังมหาวิทยาลัยกรุงเทพ รังสิตมีหลากหลายวิธี:</p>
+                <ul>
+                    <li><strong>รถเมล์:</strong> สาย 39 ปอ.510 / ปอ.520</li>
+                    <li><strong>รถตู้:</strong> สาย ต.85-93 (อนุสาวรีย์ชัยสมรภูมิ-มธ.), สาย ต.118-1 (หมอชิต-มธ.)</li>
+                    <li><strong>BTS:</strong> ลงสถานีหมอชิต (ทางออก 3,4) ต่อรถตู้สาย ต.118-1</li>
+                    <li><strong>MRT:</strong> ลงสถานีจตุจักร (ทางออก 3,4) ต่อรถตู้สาย ต.118-1 หมอชิต-มธ.</li>
+                    <li><strong>SRT:</strong> ลงสถานีรังสิต (ทางออกที่ 3) ต่อรถสองแถวสาย รังสิต-จารุศร</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Google Map Section -->
+        <div class="card map-container">
+            <div class="card-header">
+                <h2>แผนที่</h2>
+            </div>
+            <div class="card-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.635489989523!2d100.60990561526141!3d14.0396079943404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e280728e16f629%3A0xdadc26839284214d!2sBangkok+University+Rangsit+Campus!5e0!3m2!1sen!2sth!4v1522737188013" allowfullscreen loading="lazy"></iframe>
+            </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; BU OPEN HOUSE 2024 - School of Information Technology and Innovation, Bangkok University</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

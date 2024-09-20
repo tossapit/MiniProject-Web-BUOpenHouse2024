@@ -7,14 +7,14 @@
     <title>เกี่ยวกับงาน BU Open House 2024 - คณะเทคโนโลยีสารสนเทศและนวัตกรรม</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* การตกแต่งเฉพาะ */
         body {
-            background-color: #f8f9fa;
+            background-color: #212529;
+            color: #fff;
         }
 
         .about-header {
-            background: linear-gradient(90deg, rgba(33, 150, 243, 0.9), rgba(0, 188, 212, 0.9));
-            color: white;
+            background-color: #982B1C;
+            color: #fff;
             padding: 50px 0;
             text-align: center;
             margin-bottom: 40px;
@@ -32,7 +32,13 @@
 
         .card {
             margin-bottom: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            background-color: #9B1B8E;
         }
 
         .card-body ul {
@@ -40,15 +46,15 @@
         }
 
         footer {
-            background-color: #0275d8;
-            color: white;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
         }
 
         footer p {
             margin: 0;
         }
 
-        /* การแสดงผลสำหรับมือถือ */
         @media (max-width: 768px) {
             .about-header h1 {
                 font-size: 2rem;
@@ -68,9 +74,8 @@
     </header>
 
     <div class="container">
-        <!-- การ์ด: รายละเอียดเกี่ยวกับงาน -->
         <div class="card">
-            <div class="card-header bg-primary text-white">
+            <div class="card-header">
                 <h2 class="text-center">รายละเอียดเกี่ยวกับงาน</h2>
             </div>
             <div class="card-body">
@@ -80,9 +85,8 @@
             </div>
         </div>
 
-        <!-- การ์ด: วัตถุประสงค์ -->
         <div class="card">
-            <div class="card-header bg-success text-white">
+            <div class="card-header">
                 <h2 class="text-center">วัตถุประสงค์</h2>
             </div>
             <div class="card-body">
@@ -96,9 +100,8 @@
             </div>
         </div>
 
-        <!-- การ์ด: สิ่งที่ผู้เข้าร่วมจะได้พบ -->
         <div class="card">
-            <div class="card-header bg-warning text-dark">
+            <div class="card-header">
                 <h2 class="text-center">สิ่งที่ผู้เข้าร่วมจะได้พบ</h2>
             </div>
             <div class="card-body">
@@ -113,7 +116,7 @@
         </div>
     </div>
 
-    <footer class="text-center mt-4 py-4">
+    <footer class="text-center mt-4">
         <p>&copy; BU OPEN HOUSE 2024 - คณะเทคโนโลยีสารสนเทศและนวัตกรรม มหาวิทยาลัยกรุงเทพ</p>
     </footer>
 
