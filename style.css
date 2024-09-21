@@ -309,6 +309,12 @@ button:hover {
   }
 }
 
+@media (min-width: 640px) {
+  .containers-about {
+    padding: 20px 20px;
+  }
+}
+
 .qr-code-container {
   display: flex;
   flex-direction: column;
