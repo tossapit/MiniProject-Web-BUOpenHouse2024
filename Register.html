@@ -6,64 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback - Open House BU 2024</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-register {
+            max-width: 420px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-floating input {
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .form-floating label {
+            font-size: 14px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .btn-group button {
+            width: 48%;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">BU Open House 2024</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutPage.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedulepage.html">Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="speakerprofilespage.html">Speakers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Activities.html">Workshops</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="GalleryPage.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="FAQPage.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ContactPage.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="career.html">Career Opportunities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="feedbackPage.html">Feedback</a>
-                    </li>
-                </ul>
+
+    <!-- Register Form -->
+    <main class="form-register w-100 m-auto">
+        <form>
+            <div class="image-container">
+                <img src="https://contents.bu.ac.th/contents/images/downloads/acde64d2-f5fb-4aa3-84f6-fa57506edc8c.jpg" alt="Event Image">
             </div>
-        </div>
-    </nav>
+            <h1 class="h3 mb-3 fw-normal text-center">Register</h1>
 
-    <header class="web-header">
-        <h1>.</h1>
-        <p>.</p>
-    </header>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingFirstName" placeholder="John">
+                <label for="floatingFirstName">First Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingLastName" placeholder="Doe">
+                <label for="floatingLastName">Last Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                <label for="floatingEmail">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingPhone" placeholder="0123456789">
+                <label for="floatingPhone">Phone Number</label>
+            </div>
 
-    <footer class="text-center">
+            <!-- Button Group -->
+            <div class="btn-group">
+                <button class="btn btn-secondary py-2" type="button">Cancel</button>
+                <button class="btn btn-primary py-2" type="submit">Register</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-4">
         <p>&copy; BU OPEN HOUSE 2024 By Bangkok University</p>
     </footer>
 
+    <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
