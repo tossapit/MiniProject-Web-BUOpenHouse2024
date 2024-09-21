@@ -279,3 +279,32 @@ button:hover {
   font-size: 1rem;
   color: #333;
 }
+
+.section-box h2 {
+  font-size: 1.5rem;
+}
+
+.section-box p, .section-box ul {
+  font-size: 1.1rem;
+}
+
+.section-box ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.bg-custom {
+  background-color: #333;
+}
+
+.about-header {
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .containers {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0px 20px;
+  }
+}
