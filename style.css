@@ -6,6 +6,7 @@ body {
   color: #343a40;
   line-height: 1.6;
 }
+
 header {
   background-color: #333;
   color: #fff;
@@ -13,7 +14,7 @@ header {
   padding: 1rem 0;
 }
 
-.schedule-header {
+.web-header {
   background-color: #982b1c;
   color: #ffffff;
   padding: 2rem 0;
@@ -21,12 +22,12 @@ header {
   margin-bottom: 2rem;
 }
 
-.schedule-header h1 {
+.web-header h1 {
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-.schedule-header p {
+.web-header p {
   font-size: 1.2rem;
 }
 
@@ -243,24 +244,6 @@ button {
 
 button:hover {
   background-color: #34495e;
-}
-
-.career-header {
-  background-color: #982b1c;
-  color: #ffffff;
-  padding: 2rem 0;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.career-header h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-.career-header p {
-  font-size: 1.2rem;
-  color: #f1f1f1;
 }
 
 .career-container {
