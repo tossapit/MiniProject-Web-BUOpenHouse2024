@@ -19,7 +19,6 @@ header {
   color: #ffffff;
   padding: 2rem 0;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .web-header h1 {
@@ -77,7 +76,7 @@ footer {
   background-color: #2c3e50;
   color: #fff;
   width: 100%;
-  margin-top: auto;
+
 }
 
 footer p {
@@ -85,14 +84,14 @@ footer p {
 }
 
 .card {
-  min-height: 400px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .card img {
-  height: 200px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -284,7 +283,8 @@ button:hover {
   font-size: 1.5rem;
 }
 
-.section-box p, .section-box ul {
+.section-box p,
+.section-box ul {
   font-size: 1.1rem;
 }
 
@@ -304,7 +304,22 @@ button:hover {
 @media (min-width: 640px) {
   .containers {
     margin: 0 auto;
-    max-width: 1000px;
-    padding: 0px 20px;
+    max-width: 1200px;
+    padding: 20px 20px;
   }
+}
+
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code-container p {
+  text-align: center;
+}
+
+.card-header h2 {
+  margin-top: revert;
 }
