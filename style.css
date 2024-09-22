@@ -257,13 +257,13 @@ button:hover {
 }
 
 .career-box {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 30%;
-    min-width: 250px;
-    margin-bottom: 20px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%;
+  min-width: 250px;
+  margin-bottom: 20px;
 }
 
 .career-box:hover {
@@ -340,4 +340,24 @@ button:hover {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.navbar-btn {
+  color: black;
+  background-color: white;
+}
+
+.navbar-btn:hover {
+  color: white;
+  background-color: #982b1c;
+}
+
+.navbar-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-btn a:hover {
+  text-decoration: none;
+  color: white;
 }

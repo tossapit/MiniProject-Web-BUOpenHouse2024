@@ -50,6 +50,9 @@
           <li class="nav-item">
             <a class="nav-link" href="feedbackPage.html">Feedback</a>
           </li>
+          <button type="button" class="btn navbar-btn mx-3">
+            <a href="Register.html">Register</a>
+          </button>
         </ul>
       </div>
     </div>
@@ -87,25 +90,25 @@
     <p>&copy; BU OPEN HOUSE 2024 By Bangkok University</p>
   </footer>
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxxCEQt4LlxwGnSi0E_Ed9j89yO4ebn4p3Z7UstezutlTbgIVrUN1p5xlUNbyDNcfy5SQ/exec' 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxxCEQt4LlxwGnSi0E_Ed9j89yO4ebn4p3Z7UstezutlTbgIVrUN1p5xlUNbyDNcfy5SQ/exec'
     const form = document.forms['myForm']
-  
+
     form.addEventListener('submit', e => {
       e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => Swal.fire({
-  position: 'center',
-  icon: 'success',
-  title: 'บันทึกข้อมูลเรียบร้อย',
-  showConfirmButton: false,
-  timer: 1500
-}))
+          position: 'center',
+          icon: 'success',
+          title: 'บันทึกข้อมูลเรียบร้อย',
+          showConfirmButton: false,
+          timer: 1500
+        }))
         .catch(error => console.error('Error!', error.message))
-        .catch.contact-form.reset();
+        .catch.contact - form.reset();
     })
   </script>
 
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
